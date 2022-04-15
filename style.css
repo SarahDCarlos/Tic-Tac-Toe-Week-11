@@ -1,0 +1,65 @@
+:root {
+    --purple: #EBD8F9;
+}
+
+body {
+    margin:0;
+    padding:0;
+    color: var(--purple);
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 90px!important;
+    text-transform: uppercase;
+    color:#673ab7;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gameboard {
+    width: 600px;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--purple);
+    font-size: 150px;
+    background-image: url("https://media.istockphoto.com/photos/artificial-grass-background-picture-id1179610413?k=20&m=1179610413&s=612x612&w=0&h=CeE_v8e5-LyQVLyrFlsCRaT-AKieb3z05QFTfHbqOVg=");
+}
+
+button {
+    padding: 10px 20px;
+    height: max-content;
+    border-radius: 10px;
+    background-color: #673ab7;
+    color: white;
+    border-color: var(--purple);
+    font-size: 25px!important;
+    transition: 200ms transform;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
